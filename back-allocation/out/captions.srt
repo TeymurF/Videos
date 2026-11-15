@@ -1,0 +1,279 @@
+1
+00:00:01,600 --> 00:00:11,778
+Many wells flow into one facility, and their production is measured together. So how do we know what each well produced? The answer is back allocation.
+
+2
+00:00:14,278 --> 00:00:25,817
+Fluids enter each well from the reservoir and reach the surface by natural flow or artificial lift. The wellhead stream is a mixture of oil, water and gas.
+
+3
+00:00:26,317 --> 00:00:36,666
+Flowlines carry production from wells A, B and C to a gathering manifold. There the streams mix and go on to separation and processing.
+
+4
+00:00:37,166 --> 00:00:48,059
+After mixing, a conventional meter sees only the combined stream. The colours here show origin for you, the viewer. The meter cannot tell the sources apart.
+
+5
+00:00:49,959 --> 00:01:02,020
+Measuring every phase at every well, all the time, is rarely possible. Wells are tested periodically, metered with multiphase meters, or estimated with models.
+
+6
+00:01:02,520 --> 00:01:10,077
+Combined, processed streams are measured much more reliably, but they already contain commingled production.
+
+7
+00:01:10,577 --> 00:01:20,504
+Back allocation works in the opposite direction to the flow. It assigns the measured totals back to facilities, fields and individual wells.
+
+8
+00:01:21,004 --> 00:01:31,597
+The result is a reconciled estimate for every source. It remains a calculated value with uncertainty, even when the total is measured accurately.
+
+9
+00:01:32,097 --> 00:01:44,741
+It provides daily and monthly well production, supports water-cut and gas–oil-ratio analysis, guides well testing, and builds the production history for reservoir management.
+
+10
+00:01:46,641 --> 00:01:54,117
+Three main quantities are allocated: oil, gas and water, each on a defined accounting basis.
+
+11
+00:01:54,617 --> 00:02:04,276
+Where the process requires it, condensate and natural gas liquids, individual components, or gas energy are allocated as well.
+
+12
+00:02:04,776 --> 00:02:14,069
+Oil, gas and water should not automatically share one allocation factor. Their meters, routes, inventories and rules are different.
+
+13
+00:02:15,969 --> 00:02:23,724
+Start by drawing the boundary of the balance area: a well group, a platform, a facility or a whole field.
+
+14
+00:02:24,224 --> 00:02:33,946
+Every stream crossing the boundary is an input or an output: production, imports, export, fuel, flare, disposal and injection.
+
+15
+00:02:34,446 --> 00:02:44,070
+Streams that stay inside are internal. Lift gas circulating within the boundary does not become new production each time it goes round.
+
+16
+00:02:44,570 --> 00:02:55,631
+Inside the boundary, the calculation network is built from nodes, such as wells, manifolds, separators, tanks and meters, and the connections between them.
+
+17
+00:02:56,131 --> 00:03:08,182
+Every connection has an effective period. If a well flows to facility one before noon and to facility two afterwards, its daily quantity is split by routing time.
+
+18
+00:03:10,082 --> 00:03:21,389
+Next, define the accounting period: the start and end of the production day, the time zone and the closing rules. A production day does not have to begin at midnight.
+
+19
+00:03:21,889 --> 00:03:34,995
+A rate is a quantity per unit time. A period volume is what accumulates. A cumulative meter reading becomes a period quantity by subtracting the opening reading from the closing one.
+
+20
+00:03:35,495 --> 00:03:45,866
+Operating time matters. In our example, well A runs for all 24 hours, well B for 18 hours, and well C for only 12.
+
+21
+00:03:46,366 --> 00:03:57,636
+Flow also takes time to arrive, and pipelines and vessels can store or release fluid. So today’s export cannot simply be assigned to today’s well inflow.
+
+22
+00:03:59,536 --> 00:04:12,618
+The calculation needs data: well rates and tests, operating time and routing, shared meters, inventories, fluid quality, and special streams such as gas lift, fuel and flare.
+
+23
+00:04:13,118 --> 00:04:24,762
+The data come from automated systems, process historians, laboratories and operating logs. Every value keeps its source, timestamp and quality status.
+
+24
+00:04:25,262 --> 00:04:36,103
+Before any calculation, the data are validated: missing values, duplicates, impossible readings, wrong units, and timestamps outside the period.
+
+25
+00:04:36,603 --> 00:04:49,136
+Missing data do not mean zero production. A genuine zero is backed by shutdown information or a valid measurement. An unknown value is marked as missing or estimated.
+
+26
+00:04:51,036 --> 00:05:03,534
+To learn what one well produces, it is routed on its own to a test separator. Oil, gas and water are separated and measured, along with pressure, temperature and test duration.
+
+27
+00:05:04,034 --> 00:05:11,245
+The first data after switching are transient. Only the stable part of a validated test is used.
+
+28
+00:05:11,745 --> 00:05:21,166
+A test is a snapshot of a rate under particular conditions. After a choke or pump change, it may no longer be representative.
+
+29
+00:05:21,666 --> 00:05:35,067
+There are other sources too. A multiphase flow meter estimates phase rates without separating the stream. A virtual flow meter calculates them from pressures, temperatures and a well model.
+
+30
+00:05:35,567 --> 00:05:45,662
+The priority between these sources is defined in advance. And tested production returns to the main process, so it must not be counted twice.
+
+31
+00:05:47,562 --> 00:05:57,112
+Volumes measured at different pressures and temperatures cannot simply be added. Gas volume is especially sensitive to conditions.
+
+32
+00:05:57,612 --> 00:06:08,198
+So every phase is converted to defined reference conditions: a stated temperature, an absolute pressure, and a dry or wet gas convention.
+
+33
+00:06:08,698 --> 00:06:20,332
+Processing changes the phases too. In the separator, gas comes out of the oil, so stabilised tank oil is less than separator oil. This shrinkage is not a leak.
+
+34
+00:06:20,832 --> 00:06:30,759
+Laboratory factors or a PVT model make these conversions. Mass is conserved through phase changes, even when volumes are not.
+
+35
+00:06:32,659 --> 00:06:44,498
+Now the calculation. For a well with a constant rate, the preliminary volume is the daily rate multiplied by the operating hours and divided by 24.
+
+36
+00:06:44,998 --> 00:06:58,639
+Well A: 60 m³ per day for 24 hours gives 60 m³ of liquid. With a 20% water cut, that is 48 m³ of oil and 12 m³ of water.
+
+37
+00:06:59,139 --> 00:07:11,713
+Well B: 40 m³ per day, but only 18 hours: 30 m³ of liquid. Half of it is water, so 15 m³ of oil and 15 m³ of water.
+
+38
+00:07:12,213 --> 00:07:25,455
+Well C: 20 m³ per day for 12 hours gives 10 m³. At a 75% water cut: 2.5 m³ of oil and 7.5 m³ of water.
+
+39
+00:07:25,955 --> 00:07:37,318
+Together: 100 m³ of liquid, of which 65.5 m³ is preliminary oil. These are first estimates, not final allocated results.
+
+40
+00:07:39,218 --> 00:07:48,324
+The measured side comes from a material balance. Production plus external inputs equals outputs plus the change in inventory.
+
+41
+00:07:48,824 --> 00:07:59,586
+So production is not the same as export. If oil accumulates in storage, export is lower than production. If stock is drawn down, export is higher.
+
+42
+00:08:00,086 --> 00:08:12,027
+In our example, the export meter records 64.05 m³ for the day. The tank inventory rises from 20 to 28 m³.
+
+43
+00:08:12,527 --> 00:08:26,621
+So the control quantity of produced oil is 64.05 plus 28 minus 20: that is 72.05 m³. This is the total we allocate.
+
+44
+00:08:28,521 --> 00:08:37,103
+Now we work backwards. The control quantity is distributed to the wells in proportion to their preliminary estimates.
+
+45
+00:08:37,603 --> 00:08:48,730
+Each well’s share is its preliminary volume divided by the total: about 73% for A, 23% for B and 4% for C.
+
+46
+00:08:49,230 --> 00:09:03,768
+Equivalently, one reconciliation factor K is the control quantity divided by the preliminary total: 72.05 over 65.5 equals 1.10.
+
+47
+00:09:04,268 --> 00:09:16,682
+Well A is allocated 52.80 m³, well B 16.50 and well C 2.75. Their sum equals the control quantity exactly.
+
+48
+00:09:17,182 --> 00:09:27,552
+The 10% increase does not mean more oil was produced. The estimate was reconciled, and the factor alone does not say which well was in error.
+
+49
+00:09:29,452 --> 00:09:43,426
+Water is allocated separately. An independent water balance gives 31.05 m³, against a preliminary 34.5: a factor of 0.90.
+
+50
+00:09:43,926 --> 00:09:53,346
+Allocated water becomes 10.80 m³ for A, 13.50 for B and 6.75 for C.
+
+51
+00:09:53,846 --> 00:10:08,191
+Gas needs extra care. Gas leaving a gas-lifted well contains reservoir gas and returning lift gas. Without telling them apart, the same gas would be counted as new production again and again.
+
+52
+00:10:08,691 --> 00:10:20,667
+Subtracting the returning lift gas leaves 2400, 900 and 200 Sm³ of reservoir gas: 3500 in total.
+
+53
+00:10:21,167 --> 00:10:33,524
+The gas balance adds every outlet, sales, fuel, flare and injection, and subtracts the external lift gas: 4200 Sm³.
+
+54
+00:10:34,024 --> 00:10:51,388
+The gas factor is 1.20, giving 2880, 1080 and 240 Sm³. Flared and fuel gas were produced too: they are uses of gas, not gas that never existed.
+
+55
+00:10:53,288 --> 00:11:03,954
+In a large network, allocation moves through levels: first from the overall total to facilities or fields, then to well groups, and then to wells.
+
+56
+00:11:04,454 --> 00:11:16,142
+A valid intermediate meter constrains the wells downstream of it. One universal factor cannot simply be applied across facilities with different measurement arrangements.
+
+57
+00:11:16,642 --> 00:11:29,230
+Other methods exist. The difference method subtracts reliably measured contributions and assigns what is left. But a small remainder of two large numbers is very uncertain.
+
+58
+00:11:29,730 --> 00:11:43,016
+Component and energy allocation follow composition and heating value. Statistical reconciliation adjusts each measurement according to its uncertainty, while keeping the balances closed.
+
+59
+00:11:44,916 --> 00:11:58,744
+Before reconciling, look at the residual: 72.05 minus 65.5 is 6.55 m³, or 10% of the preliminary total.
+
+60
+00:11:59,244 --> 00:12:14,442
+Possible causes include outdated tests, wrong runtime, meter or water-cut errors, inventory errors, wrong routing, missing streams or mismatched periods. A residual alone does not prove a leak.
+
+61
+00:12:14,942 --> 00:12:27,980
+Proportional allocation always closes the total. That confirms the arithmetic, not the accuracy of any single well. Imbalances beyond the acceptance criteria are investigated.
+
+62
+00:12:28,480 --> 00:12:41,175
+Exceptions follow rules. A well shut in for the whole period gets zero: it earns no share just for being in the master data. And a missing estimate must never silently become zero.
+
+63
+00:12:41,675 --> 00:12:52,141
+Deferment is different again: production that was possible but did not happen. That oil never passed through the facility, so it stays out of the physical balance.
+
+64
+00:12:54,041 --> 00:13:08,238
+Allocation runs every day for operations, often with provisional data. Monthly closing uses final data, and the monthly factor comes from monthly quantities, not from averaging the daily factors.
+
+65
+00:13:08,738 --> 00:13:21,032
+The workflow runs from import and validation, through preliminary estimates, conversions, balance and allocation, to checks, exception review, approval and publication.
+
+66
+00:13:21,532 --> 00:13:34,827
+Everything is retained: data versions, period, method, parameters, user, timestamp and reasons for corrections. The same inputs and rules must always reproduce the same result.
+
+67
+00:13:35,327 --> 00:13:46,704
+The final report gives each well its oil, gas and water, runtime, factors and quality status, and from them the water cut and gas–oil ratio.
+
+68
+00:13:47,204 --> 00:13:57,593
+Commercial entitlement is calculated afterwards, under the contracts. Physical production shares and revenue shares are not assumed to be the same.
+
+69
+00:13:59,493 --> 00:14:11,341
+Back allocation does not replace reliable meters or good well tests. Weak preliminary estimates mean greater uncertainty, even when the balance closes perfectly.
+
+70
+00:14:11,841 --> 00:14:27,636
+Back allocation connects shared production accounting to the sources of that production. Measured totals, well data, operating time and material balances are combined to determine a reconciled contribution from each well.

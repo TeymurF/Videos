@@ -1,0 +1,9 @@
+{
+  "name": "back-allocation-video",
+  "private": true,
+  "type": "module",
+  "description": "Educational animation: back allocation of oil, gas and water",
+  "dependencies": {
+    "kokoro-js": "^1.2.1"
+  }
+}
