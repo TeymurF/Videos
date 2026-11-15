@@ -1,0 +1,4 @@
+out/*
+!out/pumpjack.mp4
+!out/captions.srt
+node_modules/

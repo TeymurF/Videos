@@ -1,0 +1,299 @@
+1
+00:00:08,400 --> 00:00:14,474
+This is an oil well with a downhole sucker-rod pump and a pumpjack on the surface.
+
+2
+00:00:14,974 --> 00:00:24,085
+The principle is simple: a surface motor, through the pumpjack and a long string of rods, moves a plunger deep underground.
+
+3
+00:00:24,585 --> 00:00:32,067
+Two check valves take turns letting fluid pass from the well into the pump, and then into the tubing.
+
+4
+00:00:32,567 --> 00:00:38,196
+Repeating this cycle over and over is what brings production to the surface.
+
+5
+00:00:40,096 --> 00:00:48,096
+Let us look underground. The wellbore is supported by a steel casing string, with a cement sheath around it.
+
+6
+00:00:48,596 --> 00:00:55,856
+Inside the casing hangs the production tubing. The produced fluid rises to the surface through it.
+
+7
+00:00:56,356 --> 00:01:03,022
+Sucker rods move inside the tubing. At the bottom they are connected to the downhole pump.
+
+8
+00:01:03,522 --> 00:01:09,522
+Lower still is the reservoir. It communicates with the well through perforations.
+
+9
+00:01:10,022 --> 00:01:18,393
+There are two separate paths. The energy path: motor, gearbox, cranks, walking beam, polished rod, rods, plunger.
+
+10
+00:01:18,893 --> 00:01:26,078
+And the fluid path: rock pores, perforations, pump intake, valves, tubing, wellhead and flowline.
+
+11
+00:01:26,578 --> 00:01:34,059
+The rods only transmit force. The fluid rises through the space between the rods and the tubing wall.
+
+12
+00:01:35,959 --> 00:01:43,663
+Oil does not sit in underground lakes. It is held in the pores and fractures of rock, such as sandstone.
+
+13
+00:01:44,163 --> 00:01:53,274
+Between the mineral grains there are gaps and narrow channels. They can hold oil, formation water and gas at the same time.
+
+14
+00:01:53,774 --> 00:02:02,663
+Porosity tells how much void space the rock contains. Permeability tells how easily fluids move through connected pores.
+
+15
+00:02:03,163 --> 00:02:11,015
+A rock may hold a lot of oil yet give it up slowly if the channels between the pores conduct fluid poorly.
+
+16
+00:02:12,915 --> 00:02:17,915
+What makes fluid move toward the well? A pressure difference.
+
+17
+00:02:18,415 --> 00:02:28,563
+When reservoir pressure is higher than the pressure at the bottom of the well, fluids flow toward it. This difference is called drawdown.
+
+18
+00:02:29,063 --> 00:02:39,656
+The pump removes the fluid that has entered the well. The fluid level and bottomhole pressure drop, and inflow from the reservoir is sustained.
+
+19
+00:02:40,156 --> 00:02:45,859
+Note: the pump does not have to enter the rock. It works inside the wellbore.
+
+20
+00:02:47,759 --> 00:02:54,796
+After drilling, a steel casing string is run into the hole and the space behind it is cemented.
+
+21
+00:02:55,296 --> 00:03:04,926
+Then the casing is perforated opposite the reservoir: shaped charges punch channels through steel and cement and on into the rock.
+
+22
+00:03:05,426 --> 00:03:12,167
+Now the path is open: from connected pores, along the perforation tunnels, into the casing.
+
+23
+00:03:12,667 --> 00:03:21,333
+Here is a horizontal slice above the pump. From outside in: rock, cement, casing, annulus, tubing, fluid and the rod.
+
+24
+00:03:21,833 --> 00:03:30,574
+The annulus is the gap between the tubing and the casing. Do not confuse it with the cement sheath outside the casing.
+
+25
+00:03:32,474 --> 00:03:41,141
+The pump needs fluid arriving at sufficient pressure. After the well is shut in, a static fluid level is established.
+
+26
+00:03:41,641 --> 00:03:50,604
+While the pump runs, the level drops to the dynamic level, until inflow from the reservoir equals the rate of withdrawal.
+
+27
+00:03:51,104 --> 00:03:59,104
+As pressure falls, dissolved gas comes out of the oil. Bubbles are lighter than the liquid and tend to rise.
+
+28
+00:03:59,604 --> 00:04:07,900
+A gas anchor makes the mixture change direction: liquid goes to the pump intake, while gas rises up the annulus.
+
+29
+00:04:08,400 --> 00:04:12,993
+The less gas enters the pump, the better it fills with liquid.
+
+30
+00:04:14,893 --> 00:04:21,781
+Now the pump itself. Its body is a stationary barrel with a precisely machined inner surface.
+
+31
+00:04:22,281 --> 00:04:30,652
+Inside it moves the plunger, connected to the rods. It is not solid: there is a passage through it for the fluid.
+
+32
+00:04:31,152 --> 00:04:38,781
+At the bottom of the barrel sits the standing valve. It does not move, and it lets fluid into the pump.
+
+33
+00:04:39,281 --> 00:04:46,244
+The plunger carries the traveling valve. It moves with the plunger and lets fluid pass upward.
+
+34
+00:04:46,744 --> 00:04:54,670
+The volume between the standing valve and the plunger is the pump chamber. It changes as the plunger moves.
+
+35
+00:04:55,170 --> 00:05:02,504
+Both are ball valves: a seat with a port, a ball, and a cage that limits how far the ball can lift.
+
+36
+00:05:03,004 --> 00:05:15,004
+They have no actuator. Higher pressure below lifts the ball and lets the flow through. Higher pressure above pushes the ball onto its seat.
+
+37
+00:05:16,904 --> 00:05:22,681
+Back to the surface. An electric motor turns the gearbox through a belt drive.
+
+38
+00:05:23,181 --> 00:05:30,219
+The gearbox lowers the rotation speed and raises the torque. Its output shaft turns the cranks.
+
+39
+00:05:30,719 --> 00:05:39,163
+Pitman arms link the cranks to the rear end of the walking beam. The beam rocks on a bearing atop the Samson post.
+
+40
+00:05:39,663 --> 00:05:46,996
+The horsehead rises and falls. Its curved face keeps the bridle cables moving straight up and down.
+
+41
+00:05:47,496 --> 00:05:52,978
+This is how rotation becomes the reciprocating motion of the polished rod.
+
+42
+00:05:53,478 --> 00:06:02,367
+The rods and the fluid column are very heavy. Counterweights on the cranks descend as the rods go up, helping the motor.
+
+43
+00:06:02,867 --> 00:06:10,274
+On the downstroke the counterweights rise and store energy. The load on the drive becomes more even.
+
+44
+00:06:10,774 --> 00:06:21,070
+At the wellhead the rod passes through a stuffing box. The seal keeps the fluid in, so it leaves through the side outlet into the flowline.
+
+45
+00:06:22,970 --> 00:06:31,637
+Now the key part: the pump cycle. For simplicity, assume the pump is full of liquid and the valves are in good order.
+
+46
+00:06:32,137 --> 00:06:41,322
+The plunger is at the bottom of its stroke. There is already fluid above it: the tubing is full all the way to the wellhead.
+
+47
+00:06:41,822 --> 00:06:50,489
+Upstroke. The rods pull the plunger up. The traveling valve is closed, so the plunger carries the whole fluid column.
+
+48
+00:06:50,989 --> 00:06:59,878
+The chamber under the plunger grows and its pressure falls. Intake pressure is now higher, and the standing valve opens.
+
+49
+00:07:00,378 --> 00:07:09,415
+Two things happen at once: a new charge of fluid enters under the plunger, and the fluid above it is lifted up the tubing.
+
+50
+00:07:09,915 --> 00:07:14,915
+No absolute vacuum is needed: a pressure difference is enough.
+
+51
+00:07:15,415 --> 00:07:20,415
+Top of stroke. The plunger slows down and starts moving down.
+
+52
+00:07:20,915 --> 00:07:29,285
+The chamber shrinks and its pressure rises. The standing valve closes and keeps fluid from returning to the well.
+
+53
+00:07:29,785 --> 00:07:37,933
+For a short moment both valves are closed, until the pressure under the plunger exceeds the pressure above it.
+
+54
+00:07:38,433 --> 00:07:42,933
+Downstroke. The traveling valve has opened.
+
+55
+00:07:43,433 --> 00:07:51,581
+Fluid from the chamber passes through the valve seat and the plunger passage into the space above the plunger.
+
+56
+00:07:52,081 --> 00:08:01,119
+The plunger in effect sinks through the fluid. The column in the tubing does not fall: the closed standing valve holds it.
+
+57
+00:08:01,619 --> 00:08:07,119
+At the bottom the valves switch again, and the cycle repeats.
+
+58
+00:08:07,619 --> 00:08:25,619
+In short: on the upstroke the pump takes in new fluid under the plunger and lifts the fluid above it. On the downstroke the standing valve holds the fluid while the traveling valve lets it pass above the plunger.
+
+59
+00:08:27,519 --> 00:08:38,926
+One stroke does not carry a drop from the pump to the wellhead. Each cycle adds a new charge to the tubing and pushes everything above it a little higher.
+
+60
+00:08:39,426 --> 00:08:46,685
+Let us follow one charge in fast-forward. It takes hundreds of strokes to travel the whole string.
+
+61
+00:08:47,185 --> 00:08:55,630
+The pump has to overcome the weight of this column. A 1,000-metre column of liquid presses down with about 88 bar.
+
+62
+00:08:56,130 --> 00:09:01,537
+As the fluid rises, pressure drops; gas comes out of the oil and expands.
+
+63
+00:09:03,437 --> 00:09:09,437
+At the surface, the mixture leaves through the wellhead outlet into the flowline.
+
+64
+00:09:09,937 --> 00:09:17,419
+Next come a metering unit and a separator. Here gas is separated from the liquid, and oil from water.
+
+65
+00:09:17,919 --> 00:09:25,104
+Oil goes on to treatment and transport, water to treatment and disposal, and gas to its own line.
+
+66
+00:09:27,004 --> 00:09:35,596
+A real well is more complicated. A rod string a kilometre long is elastic: it stretches and contracts like a spring.
+
+67
+00:09:36,096 --> 00:09:42,244
+So the plunger stroke downhole differs from the polished-rod stroke at the surface.
+
+68
+00:09:42,744 --> 00:09:55,744
+Theoretical displacement is plunger area times stroke length times pumping speed. A 44 mm plunger, a 2 m stroke and 6 strokes per minute give about 26 cubic metres per day.
+
+69
+00:09:56,244 --> 00:10:02,244
+Actual output is lower because of gas, leakage and incomplete filling.
+
+70
+00:10:02,744 --> 00:10:18,744
+Gas is compressible. With a lot of gas in the chamber, the downstroke first just compresses it, so the traveling valve opens late. In a severe case it never opens: this is gas lock.
+
+71
+00:10:19,244 --> 00:10:31,244
+And if the pump takes more than the reservoir delivers, the chamber fills only partly. The plunger hits the liquid: this is fluid pound.
+
+72
+00:10:31,744 --> 00:10:43,244
+That is why operation is monitored. Sensors measure polished-rod load and position and plot a dynamometer card. Its shape shows how well the pump is filling.
+
+73
+00:10:43,744 --> 00:10:49,448
+A controller then adjusts the speed or pauses the unit to let fluid build up.
+
+74
+00:10:51,348 --> 00:11:01,422
+To sum up: the motor turns the cranks, the walking beam rocks, the plunger moves up and down, and two valves turn that motion into flow.
+
+75
+00:11:01,922 --> 00:11:07,181
+Stroke by stroke, oil makes its way from the rock pores to the surface.
