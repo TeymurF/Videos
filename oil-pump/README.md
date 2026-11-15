@@ -2,9 +2,9 @@
 
 An ~11-minute, 1080p explainer video about a well with a sucker-rod pump
 (pumpjack / beam pumping unit): from oil in the rock pores to the flowline at
-the surface. On-screen text is in English; there is no narration — the
-soundtrack is the machinery itself (motor, counterweights, valves, fluid),
-synthesized procedurally and locked to the animation.
+the surface. English narration and captions, over a soundtrack of the machinery
+itself (motor, counterweights, valves, fluid) that is synthesized procedurally
+and locked to the animation.
 
 **Result:** [`out/pumpjack.mp4`](out/pumpjack.mp4) · captions: [`out/captions.srt`](out/captions.srt)
 
@@ -38,7 +38,10 @@ a stationary barrel and a traveling plunger.
   - `parts.js` — pumpjack linkage (real four-bar kinematics), downhole pump, well cross-section
   - `scenes_a.js`, `scenes_b.js`, `scenes_c.js` — the scenes and their caption text
 - `render.mjs` — renders frames in headless Chromium (Playwright) and encodes with ffmpeg
-- `audio.py` — synthesizes the soundtrack from the exported timeline (numpy only)
+- `narrate.mjs` — synthesizes the narration with the open Kokoro-82M text-to-speech
+  model (`kokoro-js`; voice `am_michael`, change with `--voice`), one clip per caption
+- `audio.py` — synthesizes the machinery soundtrack from the exported timeline and
+  mixes the narration over it (numpy only)
 - `snap.mjs` — renders individual test frames
 - `build.sh` — runs the full pipeline
 
@@ -46,5 +49,6 @@ a stationary barrel and a traveling plunger.
 ./build.sh          # -> out/pumpjack.mp4
 ```
 
-Caption timing is derived from text length, so editing a caption in a scene file
-re-times that scene automatically.
+Each caption is shown for as long as its narration clip lasts, so editing a caption
+in a scene file re-voices and re-times that scene on the next build. The first
+build downloads the voice model from huggingface.co.

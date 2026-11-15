@@ -168,14 +168,48 @@ for s in meta['scenes']:
             add(ev, stroke(e['dur'], ty == 'up', i), e['t'], 1.0)
 mix += ev
 
+# ---- narration (optional): out/narration/<scene>_<n>.wav, placed at each caption start ----
+import os
+
+
+def load_clip(path):
+    with wave.open(path) as w:
+        sr = w.getframerate()
+        a = np.frombuffer(w.readframes(w.getnframes()), '<i2').astype(np.float64) / 32767
+    n = int(round(len(a) * SR / sr))            # band-limited resample to the mix rate
+    spec = np.fft.rfft(a)
+    out = np.zeros(n // 2 + 1, complex)
+    k = min(len(spec), len(out)); out[:k] = spec[:k]
+    return np.fft.irfft(out, n) * (n / len(a))
+
+
+voice = np.zeros(N)
+speech = np.zeros(N)                             # 1 while the narrator is speaking
+VOICE_LEAD = 0.25
+for s in meta['scenes']:
+    for i, c in enumerate(s['cues']):
+        f = f"out/narration/{s['id']}_{i}.wav"
+        if not os.path.exists(f):
+            continue
+        clip = load_clip(f)
+        add(voice, clip, c['start'] + VOICE_LEAD)
+        a, b = c['start'] + VOICE_LEAD, c['start'] + VOICE_LEAD + len(clip) / SR
+        speech = np.maximum(speech, np.clip((t - a + 0.35) / 0.35, 0, 1) * np.clip((b + 0.5 - t) / 0.5, 0, 1))
+has_voice = bool(np.any(voice))
+
 # ---- master ----
 mix = mix[:int(TOTAL * SR)]
 tm = np.arange(len(mix)) / SR
 mix *= np.clip(tm / 1.5, 0, 1) * np.clip((TOTAL - tm) / 2.5, 0, 1)
 mix = np.tanh(mix * 1.6)
 mix *= 0.8 / np.max(np.abs(mix))
+if has_voice:
+    voice = voice[:len(mix)]; speech = speech[:len(mix)]
+    voice *= 0.2 / np.sqrt(np.mean(voice[np.abs(voice) > 0.01] ** 2))   # speech RMS target
+    mix = mix * (0.55 - 0.33 * speech) + np.tanh(voice * 1.2) / 1.2    # duck the machinery under the voice
+    mix *= 0.92 / np.max(np.abs(mix))
 pcm = (mix * 32767).astype('<i2')
 st = np.repeat(pcm[:, None], 2, axis=1)
 with wave.open('out/audio.wav', 'wb') as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(st.tobytes())
-print('out/audio.wav', round(TOTAL, 1), 's', 'rms', round(float(np.sqrt(np.mean(mix ** 2))), 3))
+print('out/audio.wav', round(TOTAL, 1), 's', 'narration' if has_voice else 'no narration')

@@ -28,7 +28,8 @@ function glowDot(ctx, p, k, color) {
 
 // ---------- 0. Title ----------
 SCENES.push({
-  id: 'title', amb: 'surface', cues: [], fixed: 7.5,
+  id: 'title', amb: 'surface', lead: 1.6,
+  cues: ['How does a pumpjack lift oil from hundreds or even thousands of metres underground? Let us follow the whole system, from the reservoir to the surface.'],
   draw(ctx, t) {
     drawWorld(ctx, { cx: -430, cy: -200, z: 1.25 + .04 * t / 7 }, GT);
     const g = ctx.createLinearGradient(0, 0, 1250, 0); g.addColorStop(0, 'rgba(11,16,22,.96)'); g.addColorStop(.6, 'rgba(11,16,22,.6)'); g.addColorStop(1, 'rgba(11,16,22,0)');

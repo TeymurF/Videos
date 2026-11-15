@@ -115,7 +115,9 @@ function buildTimeline() {
     s.start = T; s.idx = i; let t = s.lead ?? 0.9; s.c = []; s.e = []; s.txt = [];
     for (const cu of s.cues) {
       const [tx, d] = Array.isArray(cu) ? cu : [cu];
-      const dur = d ?? clamp(tx.length / 13.5, 4, 11.5);
+      const base = d ?? clamp(tx.length / 13.5, 4, 11.5), nd = window.NARR?.[s.id]?.[s.c.length];
+      // with narration: long enough for the spoken clip, never much shorter than the silent timing
+      const dur = nd ? Math.max(base * (d ? 1 : .85), nd + .8) : base;
       s.c.push(t); s.e.push(t + dur); s.txt.push(tx); t += dur + 0.5;
     }
     s.dur = s.fixed ?? (t + 0.5 + (s.extra || 0)); T += s.dur;

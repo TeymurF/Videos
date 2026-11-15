@@ -1,0 +1,9 @@
+{
+  "name": "pumpjack-video",
+  "private": true,
+  "type": "module",
+  "description": "Educational animation: how an oil pumpjack works",
+  "dependencies": {
+    "kokoro-js": "^1.2.1"
+  }
+}
