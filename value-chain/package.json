@@ -1,0 +1,9 @@
+{
+  "name": "value-chain-video",
+  "private": true,
+  "type": "module",
+  "description": "Educational animation: upstream, midstream and downstream oil and gas",
+  "dependencies": {
+    "kokoro-js": "^1.2.1"
+  }
+}

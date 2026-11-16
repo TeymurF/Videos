@@ -1,0 +1,279 @@
+1
+00:00:01,400 --> 00:00:10,702
+Every litre of fuel and every cubic metre of gas travels a long road, from rock deep underground to the final consumer.
+
+2
+00:00:11,202 --> 00:00:21,395
+That road has three parts. Upstream finds and produces. Midstream gathers, processes and transports. Downstream refines and delivers.
+
+3
+00:00:23,095 --> 00:00:29,351
+Part one: upstream. Find the hydrocarbons, prove them, and bring them to the surface.
+
+4
+00:00:31,251 --> 00:00:40,015
+It starts with organic material buried in sediment. Over geological time, heat and burial turn it into hydrocarbons.
+
+5
+00:00:40,515 --> 00:00:48,595
+They migrate upward into porous reservoir rock, and collect where a trap and a sealing layer stop them from escaping.
+
+6
+00:00:49,095 --> 00:00:58,133
+A reservoir is not an underground cave of oil. It is rock, with oil, gas and water held in tiny connected pores.
+
+7
+00:01:00,033 --> 00:01:09,499
+Geoscientists look for places where five things come together: a source, a migration path, a reservoir, a trap and a seal.
+
+8
+00:01:09,999 --> 00:01:23,751
+They combine regional geology, old wells and geophysical surveys. The result is a prospect: an interpretation, not proof, with a chance of success and a range of possible volumes.
+
+9
+00:01:25,651 --> 00:01:34,305
+A controlled source sends elastic waves into the ground: vibrating trucks on land, towed acoustic sources at sea.
+
+10
+00:01:34,805 --> 00:01:42,845
+Receivers record the echoes from rock boundaries, and processing turns those recordings into an image of the structure.
+
+11
+00:01:43,345 --> 00:01:52,909
+Interpreters map horizons, faults and possible traps. But a reflection is not a photograph of oil. Only a well can confirm it.
+
+12
+00:01:54,809 --> 00:02:03,492
+An exploration well tests the idea. A drilling rig creates the well. It is not the pumpjack that may produce from it later.
+
+13
+00:02:03,992 --> 00:02:13,484
+The drillstring turns a bit that breaks the rock. Drilling fluid is pumped down inside the pipe, and returns up the outside carrying the cuttings.
+
+14
+00:02:13,984 --> 00:02:21,270
+As the well deepens, steel casing is run and cemented in stages, each one narrower than the last.
+
+15
+00:02:21,770 --> 00:02:31,301
+Blowout preventers at the wellhead are part of well control. Offshore, the rig may be a jack-up, a semisubmersible or a drillship.
+
+16
+00:02:33,201 --> 00:02:40,450
+Logging tools, rock cores, pressure measurements and fluid samples reveal what the well has found.
+
+17
+00:02:40,950 --> 00:02:49,789
+Finding hydrocarbons is not enough. The field must flow well, hold enough recoverable volume, and have a route to market.
+
+18
+00:02:50,289 --> 00:03:01,244
+Appraisal wells narrow the uncertainty. Then engineers choose a development plan: a tie-back to existing facilities, or a standalone development.
+
+19
+00:03:03,144 --> 00:03:14,426
+Completion turns a drilled hole into a producing well: production tubing, packers, a wellhead tree, and perforations through casing and cement into the rock.
+
+20
+00:03:14,926 --> 00:03:28,247
+Some wells are also stimulated. Acid can clean or improve the rock near the well. Hydraulic fracturing opens fractures, held open by proppant. These are options, not standard steps.
+
+21
+00:03:30,147 --> 00:03:39,464
+Fluids flow into the well because reservoir pressure is higher than the pressure in the wellbore. A choke at the surface regulates the flow.
+
+22
+00:03:39,964 --> 00:03:48,492
+Over time, pressure falls, water cut rises and production declines. Reservoir management adapts the strategy.
+
+23
+00:03:48,992 --> 00:03:56,809
+Artificial lift adds energy to the well: a rod pump, an electrical submersible pump, or gas lift.
+
+24
+00:03:57,309 --> 00:04:07,733
+Pressure support is a different job. Water or gas is injected through separate wells to maintain pressure and sweep oil toward the producers.
+
+25
+00:04:09,633 --> 00:04:22,156
+Each well sends a mixed stream of oil, gas and water through a flowline to a manifold. Offshore, subsea wells connect to a platform or a floating unit through flowlines and risers.
+
+26
+00:04:22,656 --> 00:04:35,004
+Along the way, pressure and temperature drop. That can cause wax, hydrates or liquid slugs, so operators use insulation, heating, chemicals and pigging to keep the flow moving.
+
+27
+00:04:36,904 --> 00:04:47,189
+At the production facility, a separator slows the stream down. Gas rises to the top, water settles to the bottom, and oil floats between them.
+
+28
+00:04:47,689 --> 00:04:57,891
+Level controls regulate each outlet. Several pressure stages recover more liquid, and the gas from every stage is collected and compressed.
+
+29
+00:04:59,791 --> 00:05:10,943
+The oil is then treated. Heat, chemicals and electrostatic coalescers break the remaining emulsion, and stabilisation removes the lightest components.
+
+30
+00:05:11,443 --> 00:05:21,575
+Produced water has its own treatment train, before reuse, reinjection or permitted disposal. The recovered oil goes back into the process.
+
+31
+00:05:23,475 --> 00:05:34,789
+Meters and laboratory samples establish quantity and quality. Where streams from many wells are mixed, back allocation assigns the totals to individual wells.
+
+32
+00:05:35,289 --> 00:05:46,326
+At the transfer point, a custody-transfer meter and a quality certificate record exactly what was delivered. Ownership changes. The fluid does not.
+
+33
+00:05:48,026 --> 00:05:55,342
+Part two: midstream. Move the oil and the gas, process them, and store them on the way to market.
+
+34
+00:05:57,242 --> 00:06:06,001
+Crude oil travels by pipeline, tanker, rail or truck. On a pipeline, pump stations restore the pressure lost to friction.
+
+35
+00:06:06,501 --> 00:06:18,106
+Terminals store, measure and dispatch the crude. Tanks buffer the gap between production, shipping and refinery demand, and different grades travel in separate batches.
+
+36
+00:06:18,606 --> 00:06:30,330
+Control rooms watch pressures and flows around the clock. Coatings and cathodic protection fight corrosion, and inspection pigs travel inside the line to check its condition.
+
+37
+00:06:32,230 --> 00:06:42,760
+Now the gas. Raw gas carries water vapour, carbon dioxide, hydrogen sulfide and heavier hydrocarbons. Each has to be dealt with.
+
+38
+00:06:43,260 --> 00:06:55,483
+A solvent absorbs the acid gases and is regenerated for reuse. Dehydration removes the water. Hydrogen sulfide is converted into solid sulfur.
+
+39
+00:06:55,983 --> 00:07:07,694
+Cooling then recovers the natural gas liquids, which are split into ethane, propane, butanes and natural gasoline. What remains is methane-rich sales gas.
+
+40
+00:07:09,594 --> 00:07:17,859
+Sales gas moves through transmission pipelines. Compressor stations raise the pressure again and again along the route.
+
+41
+00:07:18,359 --> 00:07:30,818
+The pipeline itself holds gas, called linepack. And underground storage, in depleted reservoirs, aquifers or salt caverns, balances supply against seasonal demand.
+
+42
+00:07:32,718 --> 00:07:45,857
+Where a pipeline cannot reach, gas is liquefied. Cooled to about −162 °C, it becomes a liquid that takes up roughly 600 times less space.
+
+43
+00:07:46,357 --> 00:07:57,417
+This is a physical change, not a chemical one: LNG is still mostly methane. It is not the same as LPG, which is mainly propane and butane.
+
+44
+00:07:57,917 --> 00:08:06,858
+Specialised ships carry it in insulated tanks. Heat leaking in creates boil-off gas, which is recovered or used as fuel.
+
+45
+00:08:07,358 --> 00:08:14,297
+At the import terminal, vaporisers warm the LNG back into gas for the pipeline grid.
+
+46
+00:08:15,997 --> 00:08:23,099
+Part three: downstream. Turn crude oil into products, and deliver them to the people who use them.
+
+47
+00:08:24,999 --> 00:08:36,080
+Downstream begins at the refinery. Crude oils differ in density, sulfur and boiling range, so each grade is sampled, stored separately and scheduled.
+
+48
+00:08:36,580 --> 00:08:47,965
+First the crude is preheated with recovered heat and desalted: wash water picks up the salts and is separated out. Then a furnace brings it to distillation temperature.
+
+49
+00:08:49,865 --> 00:09:00,143
+In the distillation column, hot vapour rises and liquid falls across trays. Light components travel to the top; heavy ones leave lower down.
+
+50
+00:09:00,643 --> 00:09:12,778
+Side draws take off naphtha, kerosene and gas oils. Distillation separates molecules; it does not break them. And these are intermediate streams, not finished fuels.
+
+51
+00:09:13,278 --> 00:09:22,250
+The heavy residue goes to a second column under vacuum, where low pressure lets it boil at a lower temperature, without cracking.
+
+52
+00:09:24,150 --> 00:09:35,218
+Conversion units change the molecules themselves. A fluid catalytic cracker uses hot, circulating catalyst to break heavy molecules into lighter ones.
+
+53
+00:09:35,718 --> 00:09:43,076
+Coke left on the catalyst is burned off in a regenerator, which reheats the catalyst for another pass.
+
+54
+00:09:43,576 --> 00:09:54,439
+Hydrocracking does a similar job with hydrogen and a catalyst. Coking turns the heaviest residue into lighter streams and solid petroleum coke.
+
+55
+00:09:56,339 --> 00:10:07,225
+Other units improve quality rather than size. Hydrotreating uses hydrogen and a catalyst to strip out sulfur, which leaves as hydrogen sulfide.
+
+56
+00:10:07,725 --> 00:10:19,844
+Reforming rearranges naphtha into high-octane components, and makes hydrogen as a by-product. Isomerisation and alkylation build better gasoline components.
+
+57
+00:10:20,344 --> 00:10:27,675
+Three different jobs: remove contaminants, rearrange molecules, and crack large molecules.
+
+58
+00:10:29,575 --> 00:10:40,623
+Finished fuels are blended from several components to hit many specifications at once: octane, sulfur, volatility, density and flash point.
+
+59
+00:10:41,123 --> 00:10:51,056
+Laboratory tests and online analysers check every batch. Only a certified tank is released. Off-spec product is held and corrected.
+
+60
+00:10:52,956 --> 00:11:04,690
+Behind the process units run the utilities: steam, power, cooling water, fuel gas and hydrogen, along with wastewater treatment and sulfur recovery.
+
+61
+00:11:05,190 --> 00:11:12,116
+The flare is a safety system for upsets and relief. It is not the routine destination for gas.
+
+62
+00:11:12,616 --> 00:11:25,589
+And not every molecule becomes fuel. Ethane, LPG and naphtha feed steam crackers that make ethylene and propylene: the building blocks of plastics, fibres and packaging.
+
+63
+00:11:26,089 --> 00:11:32,056
+Refineries also yield lubricants, waxes, bitumen and petroleum coke.
+
+64
+00:11:33,956 --> 00:11:44,060
+Finished products fan out by pipeline, ship, rail and truck to terminals. Road fuels reach service stations, and jet fuel reaches airports.
+
+65
+00:11:44,560 --> 00:11:53,920
+Gas reaches power plants and industry, or passes through pressure reduction into city networks, where an odorant is added for safety.
+
+66
+00:11:55,820 --> 00:12:08,103
+Across the whole chain, every stage balances what comes in against products, inventories, internal use and losses. Volumes can change. Mass is conserved.
+
+67
+00:12:08,603 --> 00:12:18,470
+Information also flows backwards. Market demand shapes refinery plans, and pipeline limits can hold back production at the wells.
+
+68
+00:12:18,970 --> 00:12:27,958
+And when a field reaches the end of its life, the wells are permanently plugged, the equipment is removed, and the site is restored.
+
+69
+00:12:29,858 --> 00:12:42,112
+Upstream discovers and produces hydrocarbons. Midstream connects production with processing facilities and markets. Downstream transforms and delivers useful products.
+
+70
+00:12:42,612 --> 00:12:54,417
+Together they form one interconnected system of wells, facilities, transport networks, measurements and decisions, linking the reservoir to the final consumer.
