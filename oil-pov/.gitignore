@@ -1,0 +1,3 @@
+out/*
+!out/oil-pov.mp4
+node_modules/

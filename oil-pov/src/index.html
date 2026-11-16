@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Oil: a point-of-view journey</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}</style></head><body>
+<canvas id="cv" width="1920" height="1080"></canvas>
+<script src="engine.js"></script>
+<script src="gl.js"></script>
+<script src="fx.js"></script>
+<script src="shots_1.js"></script>
+<script src="shots_2.js"></script>
+<script src="shots_3.js"></script>
+<script>
+// Opening this file in a browser gives a live preview (space: pause, arrows: seek, ?t=60 to start at a time).
+init().then(m => { window.META = m;
+  if (navigator.webdriver) return;
+  let T = +(new URLSearchParams(location.search).get('t') || 0), last = performance.now(), run = true;
+  addEventListener('keydown', e => { if (e.key === ' ') run = !run; if (e.key === 'ArrowRight') T += 5; if (e.key === 'ArrowLeft') T -= 5; });
+  (function loop(now) { if (run) T += (now - last) / 1000; last = now; if (T >= TOTAL) T = 0; renderFrame(T); requestAnimationFrame(loop); })(last);
+});
+</script>
+</body></html>
