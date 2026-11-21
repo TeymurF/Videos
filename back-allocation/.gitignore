@@ -1,5 +1,7 @@
 out/*
 !out/back-allocation.mp4
+!out/back-allocation-ru.mp4
 !out/captions.srt
 node_modules/
 package-lock.json
+models/

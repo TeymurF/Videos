@@ -56,3 +56,9 @@ spelled out in `say` so the narrator reads them correctly. Each caption stays on
 screen for the length of its narration clip, so editing a caption re-voices and
 re-times its scene on the next build. The first build downloads the voice model
 from huggingface.co.
+
+## Russian-voice edition
+
+`out/back-allocation-ru.mp4` has the same visuals and English captions with a Russian voice
+(Piper `ru_RU-ruslan-medium`). Texts: `ru.json`; build: `./build_ru.sh`. Running `./build_ru.sh`
+overwrites `src/narration.js` with the Russian clip durations; `./build.sh` restores the English ones.
