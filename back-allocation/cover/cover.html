@@ -1,0 +1,78 @@
+<!doctype html><meta charset="utf-8"><title>Back Allocation cover</title>
+<style>
+@font-face{font-family:G;font-weight:500;src:url(golos-text-latin-500-normal.woff2)}
+@font-face{font-family:G;font-weight:700;src:url(golos-text-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(jetbrains-mono-latin-700-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:627px;overflow:hidden;font-family:G,sans-serif;color:#eef2f8;
+ background:radial-gradient(900px 500px at 78% 40%,#16284a 0%,#0c1424 60%,#080d18 100%);position:relative}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:40px 40px;
+ mask-image:linear-gradient(90deg,transparent 20%,#000 70%)}
+.tag{position:absolute;left:64px;top:62px;font:700 15px M,monospace;letter-spacing:.16em;color:#f5b042}
+.tag i{display:inline-block;width:36px;height:2px;background:#f5b042;vertical-align:middle;margin-right:12px}
+h1{position:absolute;left:60px;top:118px;font-weight:700;font-size:112px;line-height:.98;letter-spacing:-.025em}
+h1 span{color:#f5b042}
+.sub{position:absolute;left:64px;top:372px;width:470px;font-size:27px;line-height:1.32;color:#b9c4d8;font-weight:500}
+.sub b{color:#fff;font-weight:700}
+.foot{position:absolute;left:64px;bottom:52px;display:flex;gap:10px}
+.foot span{font:700 14px M,monospace;color:#8fa0bd;border:1px solid #2a3a58;border-radius:20px;padding:7px 14px;letter-spacing:.04em}
+svg{position:absolute;right:0;top:0}
+</style>
+<div class="grid"></div>
+<div class="tag"><i></i>OIL &amp; GAS · PRODUCTION ALLOCATION</div>
+<h1>Back<br><span>Allocation</span></h1>
+<div class="sub">One measured total.<br><b>Every barrel traced back to its well.</b></div>
+<div class="foot"><span>METERING</span><span>WELL TESTS</span><span>RECONCILIATION</span></div>
+<svg width="640" height="627" viewBox="0 0 640 627" font-family="G,sans-serif">
+ <defs>
+  <linearGradient id="fl" gradientUnits="userSpaceOnUse" x1="292" x2="520" y1="0" y2="0"><stop offset="0" stop-color="#f5b042" stop-opacity=".25"/><stop offset="1" stop-color="#f5b042"/></linearGradient>
+  <filter id="gl"><feGaussianBlur stdDeviation="8"/></filter>
+ </defs>
+ <!-- wells on right side, top -->
+ <g font-family="M" font-weight="700">
+  <!-- three well circles -->
+  <g transform="translate(110,120)"><circle r="30" fill="#2ec4b6" opacity=".25" filter="url(#gl)"/><circle r="26" fill="#0c1424" stroke="#2ec4b6" stroke-width="3"/><text y="9" text-anchor="middle" font-size="26" fill="#2ec4b6">A</text></g>
+  <g transform="translate(110,210)"><circle r="30" fill="#a98bff" opacity=".25" filter="url(#gl)"/><circle r="26" fill="#0c1424" stroke="#a98bff" stroke-width="3"/><text y="9" text-anchor="middle" font-size="26" fill="#a98bff">B</text></g>
+  <g transform="translate(110,300)"><circle r="30" fill="#ff7a59" opacity=".25" filter="url(#gl)"/><circle r="26" fill="#0c1424" stroke="#ff7a59" stroke-width="3"/><text y="9" text-anchor="middle" font-size="26" fill="#ff7a59">C</text></g>
+ </g>
+ <!-- merge lines -->
+ <g fill="none" stroke-width="5" stroke-linecap="round">
+  <path d="M138 120 H230 Q262 120 262 152 V190" stroke="#2ec4b6"/>
+  <path d="M138 210 H262" stroke="#a98bff"/>
+  <path d="M138 300 H230 Q262 300 262 268 V230" stroke="#ff7a59"/>
+ </g>
+ <!-- meter -->
+ <rect x="232" y="188" width="60" height="44" rx="10" fill="#0c1424" stroke="#f5b042" stroke-width="3"/>
+ <path d="M246 214 a16 16 0 0 1 32 0" fill="none" stroke="#f5b042" stroke-width="3"/><path d="M262 214 L270 204" stroke="#f5b042" stroke-width="3" stroke-linecap="round"/>
+ <!-- commingled pipe -->
+ <path d="M292 210 H520" stroke="url(#fl)" stroke-width="14" stroke-linecap="round"/>
+ <path d="M300 210 H512" stroke="#0c1424" stroke-width="3" stroke-dasharray="2 18" opacity=".5"/>
+ <text x="400" y="190" text-anchor="middle" font-family="M" font-weight="700" font-size="15" fill="#f5b042" letter-spacing=".1em">TOTAL MEASURED</text>
+ <!-- back arrow -->
+ <path d="M520 236 V322 H150" fill="none" stroke="#f5b042" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round" opacity="0"/>
+ <!-- allocation bar -->
+ <text x="76" y="402" font-family="M" font-weight="700" font-size="15" fill="#8fa0bd" letter-spacing=".1em">ALLOCATED BACK TO WELLS</text>
+ <g>
+  <rect x="76" y="418" width="440" height="40" rx="8" fill="#2ec4b6"/>
+  <rect x="76" y="418" width="440" height="40" rx="8" fill="none"/>
+ </g>
+ <clipPath id="c"><rect x="76" y="418" width="440" height="40" rx="8"/></clipPath>
+ <g clip-path="url(#c)">
+  <rect x="76" y="418" width="322" height="40" fill="#2ec4b6"/>
+  <rect x="398" y="418" width="101" height="40" fill="#a98bff"/>
+  <rect x="499" y="418" width="17" height="40" fill="#ff7a59"/>
+ </g>
+ <g font-family="M" font-weight="700" font-size="20" fill="#06101a"><text x="96" y="445">A</text><text x="440" y="445">B</text></g>
+ <!-- return arrows -->
+ <g fill="none" stroke="#f5b042" stroke-width="3" stroke-linecap="round">
+  <path d="M400 232 V352 M400 352 l-8 -10 M400 352 l8 -10" opacity=".0"/>
+  <path d="M520 232 V292 M520 292 l-8 -10 M520 292 l8 -10"/>
+  <path d="M520 292 V402" stroke-dasharray="2 9" opacity="0"/>
+ </g>
+ <g fill="none" stroke="#f5b042" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M520 224 V380"/><path d="M510 370 L520 382 L530 370"/>
+ </g>
+ <path d="M520 250 V380" stroke="#f5b042" stroke-width="3" opacity="0"/>
+ <text x="76" y="500" font-family="G" font-weight="500" font-size="19" fill="#b9c4d8">Shares follow each well's estimated production</text>
+ <text x="76" y="528" font-family="G" font-weight="500" font-size="19" fill="#b9c4d8">so the books balance to the measured total.</text>
+</svg>
