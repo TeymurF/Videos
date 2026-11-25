@@ -1,0 +1,9 @@
+{
+  "name": "well-logging-video",
+  "private": true,
+  "type": "module",
+  "description": "Educational animation: what well logging is and how the main logs work",
+  "dependencies": {
+    "kokoro-js": "^1.2.1"
+  }
+}

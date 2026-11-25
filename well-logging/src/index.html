@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Well logging explained</title>
+<style>
+@font-face{font-family:"Golos Text";font-weight:400;src:url(fonts/golos-text-cyrillic-400-normal.woff2);unicode-range:U+0400-04FF,U+2116}
+@font-face{font-family:"Golos Text";font-weight:400;src:url(fonts/golos-text-latin-400-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+@font-face{font-family:"Golos Text";font-weight:500;src:url(fonts/golos-text-cyrillic-500-normal.woff2);unicode-range:U+0400-04FF,U+2116}
+@font-face{font-family:"Golos Text";font-weight:500;src:url(fonts/golos-text-latin-500-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+@font-face{font-family:"Golos Text";font-weight:600;src:url(fonts/golos-text-cyrillic-600-normal.woff2);unicode-range:U+0400-04FF,U+2116}
+@font-face{font-family:"Golos Text";font-weight:600;src:url(fonts/golos-text-latin-600-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+@font-face{font-family:"Golos Text";font-weight:700;src:url(fonts/golos-text-cyrillic-700-normal.woff2);unicode-range:U+0400-04FF,U+2116}
+@font-face{font-family:"Golos Text";font-weight:700;src:url(fonts/golos-text-latin-700-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(fonts/jetbrains-mono-cyrillic-500-normal.woff2);unicode-range:U+0400-04FF}
+@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(fonts/jetbrains-mono-latin-500-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+@font-face{font-family:"JetBrains Mono";font-weight:700;src:url(fonts/jetbrains-mono-cyrillic-700-normal.woff2);unicode-range:U+0400-04FF}
+@font-face{font-family:"JetBrains Mono";font-weight:700;src:url(fonts/jetbrains-mono-latin-700-normal.woff2);unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF,U+2212}
+html,body{margin:0;background:#000;overflow:hidden}
+canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+</style></head><body>
+<canvas id="cv" width="1920" height="1080"></canvas>
+<script src="narration.js"></script>
+<script src="engine.js"></script>
+<script src="parts.js"></script>
+<script src="scenes_1.js"></script>
+<script src="scenes_2.js"></script>
+<script src="scenes_3.js"></script>
+<script src="scenes_4.js"></script>
+<script>
+// Opening this file in a browser gives a live preview (space: pause, arrows: seek).
+init().then(m => { window.META = m;
+  if (navigator.webdriver) return;
+  let T = +(new URLSearchParams(location.search).get('t') || 0), last = performance.now(), run = true;
+  addEventListener('keydown', e => { if (e.key === ' ') run = !run; if (e.key === 'ArrowRight') T += 5; if (e.key === 'ArrowLeft') T -= 5; });
+  (function loop(now) { if (run) T += (now - last) / 1000; last = now; if (T >= TOTAL) T = 0; renderFrame(T); requestAnimationFrame(loop); })(last);
+});
+</script>
+</body></html>

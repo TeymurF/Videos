@@ -1,0 +1,159 @@
+1
+00:00:01,400 --> 00:00:10,891
+Drilling tells us where the rock is, not what it holds. Well logging looks inside. Here is what it is, when it is done, and how each tool works.
+
+2
+00:00:13,191 --> 00:00:23,689
+Well logging is the continuous recording of rock and fluid properties along a borehole. Every value is plotted against depth, and that record is the log.
+
+3
+00:00:24,189 --> 00:00:32,999
+A tool called a sonde hangs on an armoured cable. A logging unit at the surface powers it, tracks its depth and records the data.
+
+4
+00:00:33,499 --> 00:00:41,504
+The first log was run in France in 1927 by the Schlumberger brothers. They called it electrical coring.
+
+5
+00:00:43,404 --> 00:00:51,714
+Logging spans the life of a well. Logging-while-drilling tools sit in the drill string and record data just behind the bit.
+
+6
+00:00:52,214 --> 00:01:02,427
+The classic suite runs on wireline in the open hole: when a section reaches depth, the drill pipe comes out, the tools go in, then casing is set.
+
+7
+00:01:02,927 --> 00:01:10,382
+After casing, cased-hole logs check the cement, measure production and track the reservoir over the years.
+
+8
+00:01:12,282 --> 00:01:24,794
+Logs answer four questions. Is there oil or gas? Where, from top to base? How much? And will it flow? No single tool can answer them all, so several run together.
+
+9
+00:01:26,694 --> 00:01:35,679
+Mud pressure exceeds formation pressure. In permeable beds, mud filtrate pushes into the pores and leaves a thin mudcake on the wall.
+
+10
+00:01:36,179 --> 00:01:44,443
+This creates a flushed zone, a transition zone, and undisturbed rock further out. Shallow and deep tools see different zones.
+
+11
+00:01:46,343 --> 00:01:58,914
+Tools are logged upward at a steady speed, and every reading becomes a curve against depth. Track one: gamma ray and SP. Track two: resistivity. Then porosity.
+
+12
+00:02:00,814 --> 00:02:10,028
+The gamma ray tool is passive. A scintillation crystal counts natural gamma rays from potassium, uranium and thorium in the rock.
+
+13
+00:02:10,528 --> 00:02:20,186
+These elements gather in clay, so shale reads high and clean sandstone or limestone reads low. That separates reservoirs from seals.
+
+14
+00:02:20,686 --> 00:02:28,593
+It gives shale volume, correlates layers between wells, and serves as the depth reference on almost every run.
+
+15
+00:02:30,493 --> 00:02:38,687
+The SP log needs no source. It records a natural voltage between an electrode in the mud and one at the surface.
+
+16
+00:02:39,187 --> 00:02:48,797
+The voltage comes from the salinity contrast between mud filtrate and formation water, with shale acting as an ion-selective membrane.
+
+17
+00:02:49,297 --> 00:02:58,707
+Opposite shale the curve holds a straight baseline. Opposite permeable beds it swings, usually to the left. It needs a water-based mud.
+
+18
+00:03:00,607 --> 00:03:12,549
+Grains, oil and gas do not conduct. Current flows only through salty water in the pores, so rock holding hydrocarbons reads high, and rock holding brine reads low.
+
+19
+00:03:13,049 --> 00:03:22,691
+A laterolog drives current from electrodes, and guard electrodes focus it into a thin sheet deep into the rock. It needs conductive mud.
+
+20
+00:03:23,191 --> 00:03:33,446
+An induction tool uses coils. A transmitter induces rings of current in the rock, and a receiver picks up their field, even in oil-based mud.
+
+21
+00:03:33,946 --> 00:03:43,139
+Curves reading at different depths separate where filtrate invaded a permeable bed. The deep curve approaches the true resistivity, Rt.
+
+22
+00:03:45,039 --> 00:03:53,921
+Sonic, or acoustic, logging times sound. A transmitter fires a short pulse, around twenty kilohertz, many times a second.
+
+23
+00:03:54,421 --> 00:04:03,926
+The wave travels along the borehole wall to two receivers. Their arrival-time difference, over the spacing, gives the transit time, Δt.
+
+24
+00:04:04,426 --> 00:04:13,481
+Sound is fast in tight rock and slower through pores, so Δt rises with porosity. Shear waves also give rock strength.
+
+25
+00:04:15,381 --> 00:04:23,539
+The density tool presses a pad against the wall. A caesium source fires gamma rays that scatter off electrons in the rock.
+
+26
+00:04:24,039 --> 00:04:32,794
+Denser rock has more electrons, so fewer gamma rays reach the detectors. Near and far detectors correct for the mudcake.
+
+27
+00:04:33,294 --> 00:04:42,397
+Bulk density gives porosity: matrix density is 2.65 g/cm³ for sandstone, 2.71 for limestone.
+
+28
+00:04:44,297 --> 00:04:53,058
+The neutron tool emits fast neutrons. They slow down fastest by hitting hydrogen nuclei, which have almost the same mass.
+
+29
+00:04:53,558 --> 00:05:00,821
+Water and oil are rich in hydrogen, so in liquid-filled rock the neutron count follows porosity.
+
+30
+00:05:01,321 --> 00:05:09,962
+Gas holds little hydrogen, so the neutron reads low in gas zones. Shale holds bound water, so there it reads high.
+
+31
+00:05:11,862 --> 00:05:20,404
+Neutron and density share compatible scales, so in clean water-filled sandstone the two curves lie on top of each other.
+
+32
+00:05:20,904 --> 00:05:30,354
+In gas, density porosity rises and neutron porosity falls. The curves cross over, one of the clearest gas signs on a log.
+
+33
+00:05:30,854 --> 00:05:38,490
+In shale the neutron swings left of the density. Together they give porosity, lithology and fluid type.
+
+34
+00:05:40,390 --> 00:05:48,849
+Image logs map the wall itself. An imager presses eight pads, with nearly two hundred tiny electrodes, against the rock.
+
+35
+00:05:49,349 --> 00:05:58,217
+Each electrode is one pixel. Unrolled around the hole, the readings form a picture: conductive rock dark, resistive rock bright.
+
+36
+00:05:58,717 --> 00:06:08,826
+A plane cutting the hole shows as a sine wave. Its height gives the dip, its low point the direction. Geologists read bedding, fractures and faults.
+
+37
+00:06:10,726 --> 00:06:21,704
+Read together, the logs tell the story. Low gamma ray marks the reservoir. High deep resistivity means hydrocarbons, low resistivity means water.
+
+38
+00:06:22,204 --> 00:06:32,427
+Neutron–density crossover flags the gas, the resistivity drop marks the oil–water contact, and Archie's equation turns it into saturation.
+
+39
+00:06:32,927 --> 00:06:41,921
+Geologists then map the pay zone, estimate oil and gas in place, choose where to perforate, and correlate with nearby wells.
+
+40
+00:06:44,121 --> 00:06:52,950
+Each tool reads one property of the rock. Together, they turn a narrow hole in the ground into a detailed picture of the reservoir.
