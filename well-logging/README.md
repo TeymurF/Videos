@@ -40,3 +40,9 @@ sandstone, shale, tight limestone, shale) with textbook responses, so all scenes
 ```
 
 `node snap.mjs <dir> gr+c1+4 ...` renders single test frames; open `src/index.html` in a browser for a live preview.
+
+## Short cut (≈ 90 s)
+
+[`short/out/well-logging-short.mp4`](short/out/well-logging-short.mp4): a quick social-media version, one line per log
+("this is X, it tells you Y, it works like Z"), with the same animations in a faster edit, big headers and a light beat.
+It reuses the code in `src/` and only replaces the scene list (`short/src/short.js`). Build: `short/build.sh`.

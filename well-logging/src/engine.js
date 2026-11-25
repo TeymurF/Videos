@@ -120,19 +120,19 @@ function wrap(ctx, s, maxW) {
 }
 
 function buildTimeline() {
-  let T = 0;
+  let T = 0; const P = window.PACE || {};
   SCENES.forEach((s, i) => {
-    s.start = T; s.idx = i; let t = s.lead ?? 0.9; s.c = []; s.e = []; s.txt = []; s.say = [];
+    s.start = T; s.idx = i; let t = s.lead ?? P.lead ?? 0.9; s.c = []; s.e = []; s.txt = []; s.say = [];
     for (const cu of s.cues) {
       // a cue is 'text', ['text', seconds] or { t: 'text', say: 'spoken form', d: seconds }
       const [tx, d] = Array.isArray(cu) ? cu : typeof cu === 'string' ? [cu] : [cu.t, cu.d];
       s.say = s.say || []; s.say.push(typeof cu === 'object' && !Array.isArray(cu) && cu.say ? cu.say : tx);
       const base = d ?? clamp(tx.length / 13.5, 4, 11.5), nd = window.NARR?.[s.id]?.[s.c.length];
       // with narration: long enough for the spoken clip, never much shorter than the silent timing
-      const dur = nd ? Math.max(base * (d ? 1 : .85), nd + .8) : base;
-      s.c.push(t); s.e.push(t + dur); s.txt.push(tx); t += dur + 0.5;
+      const dur = nd ? Math.max(base * (d ? 1 : (P.baseK ?? .85)), nd + (P.pad ?? .8)) : base;
+      s.c.push(t); s.e.push(t + dur); s.txt.push(tx); t += dur + (P.gap ?? 0.5);
     }
-    s.dur = s.fixed ?? (t + 0.5 + (s.extra || 0)); T += s.dur;
+    s.dur = s.fixed ?? (t + (P.tail ?? 0.5) + (s.extra || 0)); T += s.dur;
   });
   TOTAL = T;
 }
@@ -147,8 +147,19 @@ function renderFrame(T) {
   ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
   ctx.save(); s.draw(ctx, t, s.c, s); ctx.restore();
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
+  const P = window.PACE || {};
   // scene header
-  if (s.title) {
+  if (s.title && P.bigHeader) {
+    const a = lin(t, .05, .3);
+    ctx.save(); ctx.globalAlpha = a;
+    const g = ctx.createLinearGradient(0, 0, 0, 110); g.addColorStop(0, 'rgba(11,16,22,.95)'); g.addColorStop(1, 'rgba(11,16,22,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, 110);
+    ctx.font = font(48, 700); const tw = ctx.measureText(s.title).width;
+    ctx.fillStyle = s.col ?? C.accent; ctx.fillRect(48, 28, 8, 52);
+    txt(ctx, s.title, 74, 56, { size: 48, weight: 700, color: s.col ?? '#ffffff' });
+    if (s.tag) txt(ctx, s.tag, 74 + tw + 28, 59, { size: 32, weight: 600, color: '#e6ebf0' });
+    ctx.restore();
+  } else if (s.title) {
     const a = lin(t, .2, .6);
     ctx.save(); ctx.globalAlpha = a;
     const g = ctx.createLinearGradient(0, 0, 0, 120); g.addColorStop(0, 'rgba(11,16,22,.92)'); g.addColorStop(1, 'rgba(11,16,22,0)');
@@ -161,15 +172,16 @@ function renderFrame(T) {
   // caption
   for (let i = 0; i < s.c.length; i++) {
     const a = win(t, s.c[i] - .1, s.e[i] + .25, .3); if (a <= 0) continue;
-    ctx.save(); ctx.globalAlpha = a; ctx.font = font(36, 500);
-    const lines = wrap(ctx, s.txt[i], 1560), lh = 48, bh = lines.length * lh + 34, by = 1040 - bh;
+    const cs = P.capSize ?? 36;
+    ctx.save(); ctx.globalAlpha = a; ctx.font = font(cs, P.capWeight ?? 500);
+    const lines = wrap(ctx, s.txt[i], P.capW ?? 1560), lh = Math.round(cs * 1.33), bh = lines.length * lh + 34, by = 1040 - bh;
     const tw = Math.max(...lines.map(l => ctx.measureText(l).width));
     rr(ctx, 960 - tw / 2 - 34, by, tw + 68, bh, 16); ctx.fillStyle = 'rgba(7,10,14,.84)'; ctx.fill();
-    lines.forEach((l, j) => txt(ctx, l, 960, by + 17 + lh * (j + .5), { size: 36, align: 'center' }));
+    lines.forEach((l, j) => txt(ctx, l, 960, by + 17 + lh * (j + .5), { size: cs, weight: P.capWeight ?? 500, align: 'center' }));
     ctx.restore();
   }
   // fade at scene boundaries
-  const f = Math.max(1 - lin(t, 0, .45), lin(t, s.dur - .4, .4));
+  const f = Math.max(1 - lin(t, 0, P.fade ?? .45), lin(t, s.dur - (P.fade ?? .4), P.fade ?? .4));
   if (f > 0) { ctx.globalAlpha = f; ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
   // progress bar
   ctx.fillStyle = 'rgba(255,255,255,.08)'; ctx.fillRect(0, H - 6, W, 6);

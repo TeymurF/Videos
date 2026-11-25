@@ -33,7 +33,7 @@ function grPhysics(ctx, t, d, a) {
       if (R() > logAt('GR', DofY(zv, py)) / 125) continue;
       photon(ctx, px, py, hx + side * 30, ym + (R() - .5) * 60, (t - j * dt) / life, { tail: 70 });
     }
-    label(ctx, hx - 34, ym - 20, hx - 110, ym - 150, 'Scintillation crystal\nflashes for every gamma ray', { a: 1, size: 22 });
+    label(ctx, hx - 34, ym - 20, hx - 70, ym - 170, 'Scintillation crystal\ncounts gamma rays', { a: 1, size: 22 });
   });
   chip(ctx, PX.x0 + 28, PX.y0 + 84, 'Natural gamma rays · K-40 · uranium · thorium', { color: C.gamma, size: 20 });
   const g = logAt('GR', d);

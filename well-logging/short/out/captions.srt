@@ -1,0 +1,51 @@
+1
+00:00:00,800 --> 00:00:02,925
+Well logging, explained fast.
+
+2
+00:00:03,825 --> 00:00:11,637
+A tool on a cable reads the rock along the borehole, and every reading becomes a curve against depth. That is the log.
+
+3
+00:00:12,637 --> 00:00:18,104
+It runs while drilling, after each section before casing, and later through the casing.
+
+4
+00:00:19,104 --> 00:00:25,757
+Gamma ray counts natural radiation. Shale is hot, clean sand is not, so it finds the reservoir.
+
+5
+00:00:26,757 --> 00:00:33,530
+SP reads a natural voltage in the mud. It swings away from the shale line opposite permeable beds.
+
+6
+00:00:34,530 --> 00:00:41,402
+Resistivity: salty water conducts, oil and gas don't. High resistivity means hydrocarbons.
+
+7
+00:00:42,402 --> 00:00:48,104
+Sonic times a sound pulse along the wall. The slower the sound, the more porous the rock.
+
+8
+00:00:49,104 --> 00:00:55,567
+Density fires gamma rays into the rock. Denser rock sends fewer back, and that gives porosity.
+
+9
+00:00:56,567 --> 00:01:02,288
+Neutron counts hydrogen, so it sees the fluid in the pores, and reads low in gas.
+
+10
+00:01:03,288 --> 00:01:08,006
+Put neutron and density together. Where the curves cross over, that's gas.
+
+11
+00:01:09,006 --> 00:01:15,356
+Image logs map the borehole wall. Layers and fractures show up as sine waves that give their dip.
+
+12
+00:01:16,356 --> 00:01:21,275
+Read together, they show where the oil is, how much there is, and where to perforate.
+
+13
+00:01:22,425 --> 00:01:25,465
+That's well logging: the rock, read from inside.

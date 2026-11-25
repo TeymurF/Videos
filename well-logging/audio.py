@@ -61,6 +61,20 @@ room = band(40, 240, 8) * 0.012 + band(2000, 6000, 9) * 0.003
 
 mix = pad * (0.6 * mask('rig') + 1.0 * mask('lab')) + rig * mask('rig') + room * mask('lab')
 
+# ---- optional light beat (short cut): kick on the beat, hat on the off-beat ----
+BEAT = float(os.environ.get('BEAT_BPM', '0'))
+if BEAT > 0:
+    beat = np.zeros(N); bt = 60 / BEAT
+    nk = int(0.25 * SR); xk = np.arange(nk) / SR
+    kick = np.sin(2 * np.pi * (48 + 70 * np.exp(-xk / 0.03)) * xk) * np.exp(-xk / 0.11)
+    hat = band(6000, 14000, 41, int(0.05 * SR)) * np.exp(-np.arange(int(0.05 * SR)) / SR / 0.012)
+    k = 0
+    while k * bt < TOTAL:
+        add(beat, kick, k * bt, 0.16 if k % 4 == 0 else 0.11)
+        add(beat, hat, k * bt + bt / 2, 0.022)
+        k += 1
+    mix += beat * np.clip(t / 2.0, 0, 1)
+
 
 # ---- event sounds ----
 def click(seed):
